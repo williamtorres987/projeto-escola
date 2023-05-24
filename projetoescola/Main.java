@@ -1,16 +1,42 @@
 package projetoescola;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-    //TODO: CRIAR CLASSE FUNCIONÁRIO COM AS SEGUINTES VARIAVEIS(nome,idade,cpf,cargo,salario)
-        //TODO: CRIAR CLASSE ALUNO COM AS SEGUINTES VARIAVEIS(nome,idade,cpf,matricula,nota)
-        //TODO: CRIAR CLASSE PROFESSOR COM AS SEGUINTES VARIAVEIS(matéria) e estender a classe funcionario para a classe professor
-        //TODO: CRIAR CLASSE CronogramaAlimentarCantina(vocês escolhem as variaveis) e também criar uma função que ao chamar a mesma ela retorna a seguinte frase "HORA DO RANGO"
-        //TODO: CRIAR MÉTODO PARA CALCULAR A MÉDIA DE UM ALUNO
+
         CronogramaAlimentarCantina aviso = new CronogramaAlimentarCantina();
         System.out.println(aviso.avisoMerenda());
+        Aluno aluno = new Aluno();
+        Scanner scanner = new Scanner(System.in);
+        int opcao = 0;
 
+        do {
+            System.out.println("Escolha uma opçao:  ");
+            System.out.println("1. Professor ");
+            System.out.println("2. Aluno");
+            System.out.println("3. Funcionario");
+            System.out.println("4. Cardapio da escola");
+            System.out.println("0. Sair");
+            opcao = scanner.nextInt();
+            switch (opcao){
+                case 1:
+                    System.out.println("voce escolheu a opcao 1");
+                    break;
+                case 2:
+                    System.out.println("voce escolheu a opcao 2");
+                    break;
+                case 3:
+                    System.out.println("voce escolheu a opcao 3");
+                    break;
+                case 4:
+                    System.out.println("voce escolheu a opcao 4");
+                    break;
+                default:
+                    System.out.println("Digite uma opcao valida!");
+            }
 
+        }while(opcao!=0);
     }
 }
 

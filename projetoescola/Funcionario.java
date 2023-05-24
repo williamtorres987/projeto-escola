@@ -1,7 +1,7 @@
 package projetoescola;
 
 public class Funcionario {
-    // ,idade,cpf,,salario
+
     private String nome;
     private String cargo;
     private int idade;

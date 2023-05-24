@@ -1,49 +1,70 @@
 package projetoescola;
 
+import java.util.Scanner;
+
 public class Aluno {
-    private String nome;
-    private double idade;
-    private double cpf;
-    private double matricula;
-    private int nota;
 
-    public String getNome() {
-        return nome;
-    }
+  private String nome;
+  private double idade;
+  private double cpf;
+  private double matricula;
+  private double notaum;
+  private double notadois;
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+  public String getNome() {
+    return nome;
+  }
 
-    public double getIdade() {
-        return idade;
-    }
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
 
-    public void setIdade(double idade) {
-        this.idade = idade;
-    }
+  public double getIdade() {
+    return idade;
+  }
 
-    public double getCpf() {
-        return cpf;
-    }
+  public void setIdade(double idade) {
+    this.idade = idade;
+  }
 
-    public void setCpf(double cpf) {
-        this.cpf = cpf;
-    }
+  public double getCpf() {
+    return cpf;
+  }
 
-    public double getMatricula() {
-        return matricula;
-    }
+  public void setCpf(double cpf) {
+    this.cpf = cpf;
+  }
 
-    public void setMatricula(double matricula) {
-        this.matricula = matricula;
-    }
+  public double getMatricula() {
+    return matricula;
+  }
 
-    public int getNota() {
-        return nota;
-    }
+  public void setMatricula(double matricula) {
+    this.matricula = matricula;
+  }
 
-    public void setNota(int nota) {
-        this.nota = nota;
-    }
+  public double getNotaum() {
+    return notaum;
+  }
+
+  public void setNotaum(double notaum) {
+    this.notaum = notaum;
+  }
+
+  public double getNotadois() {
+    return notadois;
+  }
+
+  public void setNotadois(double notadois) {
+    this.notadois = notadois;
+  }
+
+  public void setNotaum(int notaum) {
+    this.notaum = notaum;
+  }
+
+
+  public void setNotadois(int notadois) {
+    this.notadois = notadois;
+  }
 }

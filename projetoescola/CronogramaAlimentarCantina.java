@@ -29,7 +29,6 @@ public class CronogramaAlimentarCantina {
         this.fruta = fruta;
     }
 
-    // Criacao de uma função e o encapsulamento da mesma. Criamos o nome da nossa função, atribuimos um tipo e em seguida usamos o comando "return" para ´retornar o valor que ela espera.
     public String avisoMerenda(){
         return "Hora do rango!";
     }
