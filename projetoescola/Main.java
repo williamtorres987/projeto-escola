@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        CronogramaAlimentarCantina aviso = new CronogramaAlimentarCantina();
-        System.out.println(aviso.avisoMerenda());
+        CronogramaAlimentarCantina cardapio = new CronogramaAlimentarCantina();
         Aluno aluno = new Aluno();
+        Professor professor = new Professor();
+        Funcionario funcionario = new Funcionario();
         Scanner scanner = new Scanner(System.in);
         int opcao = 0;
 
@@ -21,16 +22,18 @@ public class Main {
             opcao = scanner.nextInt();
             switch (opcao){
                 case 1:
-                    System.out.println("voce escolheu a opcao 1");
+                    professor.menuProfessor(scanner);
                     break;
                 case 2:
-                    System.out.println("voce escolheu a opcao 2");
+                    aluno.menuAluno(scanner);
+
                     break;
                 case 3:
-                    System.out.println("voce escolheu a opcao 3");
+                    funcionario.menuFuncionario(scanner);
                     break;
                 case 4:
-                    System.out.println("voce escolheu a opcao 4");
+                    cardapio.avisoCardapioePrecos();
+                    cardapio.pedidosCantina(scanner);
                     break;
                 default:
                     System.out.println("Digite uma opcao valida!");

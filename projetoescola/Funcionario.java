@@ -1,12 +1,14 @@
 package projetoescola;
 
+import java.util.Scanner;
+
 public class Funcionario {
 
-    private String nome;
-    private String cargo;
-    private int idade;
-    private double salario;
-    private double cpf;
+    public String nome;
+    public String cargo;
+    public int idade;
+    public double salario;
+    public double cpf;
 
     public String getNome() {
         return nome;
@@ -46,5 +48,18 @@ public class Funcionario {
 
     public void setCpf(double cpf) {
         this.cpf = cpf;
+    }
+
+    public void menuFuncionario(Scanner scanner) {
+        System.out.println("Digite seu nome: ");
+        nome = scanner.next();
+        System.out.println("Qual cargo você ocupa: ");
+        cargo = scanner.next();
+        System.out.println("Qual a sua idade? ");
+        idade = scanner.nextInt();
+        System.out.println("Qual seu salário? ");
+        salario = scanner.nextDouble();
+        System.out.println("Informe seu cpf: ");
+        cpf = scanner.nextDouble();
     }
 }
